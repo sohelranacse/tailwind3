@@ -1,22 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex</title>
-    <link href="./styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="flex flex-row max-w-6xl mx-auto hover:flex-row-reverse">
-      <div class="basis-6/12 bg-green-300">01</div>
-      <div class="basis-6/12 bg-blue-300">2</div>
-      <!-- <div class="basis-1/4 bg-green-500">02</div> -->
-      <!-- <div class="basis-1/2 bg-red-300">03</div> -->
-    </div>
-    <div class="flex mx-auto max-w-6xl">
-      <h1 class="mt-10">Sohel Rana</h1>
-      <p class="font-bold">Good morning</p>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex</title>
+        <link href="./styles.css" rel="stylesheet">
+    </head>
+    <body class="bg-[#F3F2ED]">
+        <div class="w-10/12 m-auto bg-white min-h-screen">
+            <div class="flex flex-wrap ">
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800 ">flex-basis</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">basis-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">basis-96</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">basis-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">basis-1/4</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">basis-2/4</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">basis-10/12</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">basis-full</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800 ">basis-direction</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-row</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-row-revese</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-col</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-col-revers</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800 ">flex-wrap</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-wrap</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-wrap-reverse</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-nowrap</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800 ">flex</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-initial</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">flex-none</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800 ">flex-shrink</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">shrink</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">shrink-0</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">order</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">order-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">order-12</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">order-first</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">order-last</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">order-none</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">grid-template-columns</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-cols-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-cols-12</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-cols-none</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">grid-column</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-span-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-span-12</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-span-full</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-start-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-start-13</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-start-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-end-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-end-13</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">col-end-auto</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">grid-template-rows</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-rows-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-rows-6</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-rows-none</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">grid-row</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-span-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-span-7</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-span-full</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-start-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-start-7</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-start-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-end-1</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-end-7</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">row-end-auto</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">grid-auto-flow</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-auto-flow-row</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-auto-flow-col</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-auto-flow-row-dense</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">grid-auto-flow-col-dense</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">grid-auto-cols</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-cols-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-cols-min</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-cols-max</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-cols-fr</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">grid-auto-rows</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-rows-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-rows-min</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-rows-max</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">auto-rows-fr</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">gap</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">gap-0</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">gap-x-0</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">gap-y-0</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">gap-96</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">justify-content</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-start</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-cente</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-end</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-between</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-around</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-evenly</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">justify-items</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-items-start</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-items-end</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-items-center</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-items-stretch</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">justify-self</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-self-auto</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-self-start</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">justify-self-end</li>
+                    </ul>
+                </div>
+                <div class="my-3 px-2 w-1/5">
+                    <h2 class="border border-solid border-gray-200 rounded-md py-2 bg-gray-200 px-2 text-base text-gray-800">align-items</h2>
+                    <ul class="border border-solid rounded-md overflow-auto block my-2 text-sm">
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">items-start</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">items-end</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">items-center</li>
+                        <li class="px-2 p-1 border-x border-l-0 border-b border-solid border-gray-200">items-baseline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
